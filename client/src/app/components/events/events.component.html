@@ -1,0 +1,6 @@
+<h1>{{"EVENTS.TITLE" | translate}}</h1>
+<ng-container *ngIf="events$ | async as events">
+    <ng-container *ngFor="let event of events">
+      <div>{{ event.name }}</div>
+    </ng-container>
+  </ng-container>
